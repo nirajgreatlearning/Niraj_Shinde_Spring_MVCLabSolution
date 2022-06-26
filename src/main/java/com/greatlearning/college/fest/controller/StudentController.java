@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.greatlearning.college.fest.models.Student;
-import com.greatlearning.college.fest.serviceimpl.StudentServiceImpl;
+import com.greatlearning.college.fest.service.StudentService;
 
 @Controller
 public class StudentController {
 	@Autowired
-	StudentServiceImpl studentService;
+	StudentService studentService;
 
 	@RequestMapping("/studentlist")
 	public String studentList(Model model) {
